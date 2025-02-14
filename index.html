@@ -44,12 +44,12 @@
             margin: 0 10px;
             padding: 10px 20px;
             font-size: 16px;
-            border-radius: 8px; /* Bordas arredondadas */
+            border-radius: 8px;
             transition: 0.3s;
         }
         .contact-buttons a:hover {
-            background-color: #1d3557; /* Cor ao passar o mouse */
-            color: #ffffff; /* Texto claro */
+            background-color: #1d3557;
+            color: #ffffff;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra leve */
         }
         .contact-buttons {
@@ -60,19 +60,32 @@
         .contact-section {
             padding: 40px;
             background: linear-gradient(135deg, #0d1b2a, #1c3a63);
-            border-radius: 12px; /* Arredondar bordas da seção */
+            border-radius: 12px;
             text-align: center;
         }
         .tag {
-            background-color: #FFC107; /* Amarelo */
-            color: #111; /* Preto */
+            background-color: #FFC107;
+            color: #111;
             font-weight: bold;
             padding: 5px 12px;
             margin: 3px;
-            border-radius: 20px; /* Bordas arredondadas */
+            border-radius: 20px;
             display: inline-block;
             font-size: 12px;
         }
+        .div-zoom {
+            transition: transform 0.3s ease-in-out;
+        }
+        .div-zoom:hover {
+            transform: scale(1.05);
+        }
+        .card-center{
+            justify-content: center;
+        }
+        .card-body img {
+            height: 125px;
+        }
+
         @media (max-width: 768px) {
             .contact-buttons {
                 flex-direction: column; /* Empilha os botões no mobile */
@@ -163,10 +176,28 @@
         <div class="container">
             <h2 class="section-title">Projetos</h2>
             <div class="row">
-                <div class="col-md-4">
+                
+                <div class="col-md-4 div-zoom">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Somos P2 - Agência</h5>
+                            <img src="somosp2.png">
+                            <p class="card-text">Lading Page para agência de Marketing e Social Media.</p>
+                            <p><span class="tag">Wordpress</span><span class="tag" style="background-color: purple; color: white;">PHP</span></p>
+                            
+                            <a href="https://somosp2.com.br/" class="btn btn-custom btn-lg" target="_blank">
+                                <i class="bi bi-box-arrow-up-right" style="font-size: 24px; color: black;"></i>
+                                 Acesse
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 div-zoom">
                     <div class="card bg-dark text-light">
                         <div class="card-body">
                             <h5 class="card-title">Essence Cosmetics</h5>
+                            <img src="essenze.png">
                             <p class="card-text">Catálogo de cosméticos e produtos de skin care.</p>
                             <p><span class="tag">Wordpress</span><span class="tag" style="background-color: purple; color: white;">PHP</span></p>
                             
@@ -177,16 +208,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Description of the project and its impact.</p>
-                            <a href="#contact" class="btn btn-custom btn-lg" target="_blank"><i class="bi bi-github" style="font-size: 24px; color: black;"></i> Github</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
+
+                <div class="col-md-4 div-zoom">
                     <div class="card bg-dark text-light">
                         <div class="card-body">
                             <h5 class="card-title">Project 3</h5>
