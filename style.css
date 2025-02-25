@@ -1,0 +1,89 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #0d6efd;
+}
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+.nav-link:hover {
+    color: #b3d4fc !important;
+}
+.section-title {
+    color: #0d6efd;
+    margin-bottom: 30px;
+}
+.btn-custom {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+footer {
+    background-color: #0d6efd;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+.contact-buttons a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.contact-buttons a:hover {
+    background-color: #1d3557;
+    color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.contact-section {
+    padding: 40px;
+    background: linear-gradient(135deg, #0d1b2a, #1c3a63);
+    border-radius: 12px;
+    text-align: center;
+}
+.tag {
+    background-color: #FFC107;
+    color: #111;
+    font-weight: bold;
+    padding: 5px 12px;
+    margin: 3px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+}
+.div-zoom {
+    transition: transform 0.3s ease-in-out;
+}
+.div-zoom:hover {
+    transform: scale(1.05);
+}
+.card-center{
+    justify-content: center;
+}
+.card-body img {
+    height: 125px;
+}
+
+.img-stack {
+    width: 64px;
+    height: 64px;
+}
+
+@media (max-width: 768px) {
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
